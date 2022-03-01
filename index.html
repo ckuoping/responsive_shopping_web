@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- private CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <!-- slider CSS-->
+    <link rel="stylesheet" href="./sliderModules/lightslider.css">
+    <!-- fav icon -->
+    <link rel="Shortcut Icon" href="./images/fav icon.png">
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav>
+        <!-- logo -->
+        <a href="#" class="logo">
+            <img src="./images/logof.png" alt="">
+        </a>
+
+        <!-- menu btn for responsive display -->
+
+        <div class="menu-icon" for="menu-btn">
+            <span class="material-icons">menu</span>
+        </div>
+
+        <!-- menu -->
+        <ul class="menu">
+            <li>
+                <a href="#">Men</a>
+            </li>
+            <li>
+                <a href="#">Women</a>
+            </li>
+            <li>
+                <a href="#">Kids</a>
+            </li>
+            <li>
+                <a href="#">Family</a>
+            </li>
+            <li>
+                <a href="#">Couple</a>
+            </li>
+        </ul>
+        <!-- search -->
+        <div class="search">
+            <input type="text" placeholder="Find Your Favorite">
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <div id="main">
+        <!-- banner -->
+        <div class="banner">
+            <h1>Ready to Wear</h1>
+            <p>Dress yourself in this season</p>
+        </div>
+        <!-- showcases -->
+        <h1 class="showcase-heading">Category</h1>
+
+        <ul id="autoWidth" class="cs-hidden">
+            <!-- case-1 -->
+            <li class="item-a">
+                <div id="showcase-box-1" class="showcase-box">
+                    <div id="hover-bg-1" class="hover-bg">MEN</div>
+                    <img src="./images/sm-1.jpg" alt="">
+                </div>
+            </li>
+            <!-- case-2 -->
+            <li class="item-b">
+                <div id="showcase-box-2" class="showcase-box">
+                    <div id="hover-bg-2" class="hover-bg">WOMEN</div>
+                    <img src="./images/sm-2.jpg" alt="">
+                </div>
+            </li>
+            <!-- case-3 -->
+            <li class="item-c">
+                <div id="showcase-box-3" class="showcase-box">
+                    <div id="hover-bg-3" class="hover-bg">KIDS</div>
+                    <img src="./images/sm-3.jpg" alt="">
+                </div>
+            </li>
+            <!-- case-4 -->
+            <li class="item-d">
+                <div id="showcase-box-4" class="showcase-box">
+                    <div id="hover-bg-4" class="hover-bg">FAMILY</div>
+                    <img src="./images/sm-4.jpg" alt="">
+                </div>
+            </li>
+            <!-- case-5 -->
+            <li class="item-e">
+                <div id="showcase-box-5" class="showcase-box">
+                    <div id="hover-bg-5" class="hover-bg">COUPLE</div>
+                    <img src="./images/sm-5.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <!-- latest content -->
+    <div id="latest">
+        <h2 class="latest-heading">Latest</h2>
+        <ul id="autoWidth2" class="cs-hidden">
+            <!-- item 1 -->
+            <li class="item-a">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="./images/c-1.jpg" alt="">
+                    </div>
+                    <div class="latest-b-txt">
+                        <strong>PRINT SHIRT</strong>
+                        <p>39.90 USD</p>
+                    </div>
+                </div>
+            </li>
+            <!-- item 2 -->
+            <li class="item-b">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="./images/c-2.jpg" alt="">
+                    </div>
+                    <div class="latest-b-txt">
+                        <strong>COLLEGE T-SHIRT</strong>
+                        <p>29.90 USD</p>
+                    </div>
+                </div>
+            </li>
+            <!-- item 3 -->
+            <li class="item-c">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="./images/c-3.jpg" alt="">
+                    </div>
+                    <div class="latest-b-txt">
+                        <strong>STRAIGHT FIT JEANS</strong>
+                        <p>49.90 USD</p>
+                    </div>
+                </div>
+            </li>
+            <!-- item 4 -->
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="./images/c-4.jpg" alt="">
+                    </div>
+                    <div class="latest-b-txt">
+                        <strong>STRUCTURED TOP</strong>
+                        <p>35.90 USD</p>
+                    </div>
+                </div>
+            </li>
+            <!-- item 5 -->
+            <li class="item-e">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="./images/c-5.jpg" alt="">
+                    </div>
+                    <div class="latest-b-txt">
+                        <strong>RUSTIC KNIT SKIRT</strong>
+                        <p>39.90 USD</p>
+                    </div>
+                </div>
+            </li>
+            <!-- item 6 -->
+            <li class="item-f">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="./images/c-6.jpg" alt="">
+                    </div>
+                    <div class="latest-b-txt">
+                        <strong>LINEN BLEND DRESS</strong>
+                        <p>45.90 USD</p>
+                    </div>
+                </div>
+            </li>
+            <!-- item 7 -->
+            <li class="item-g">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="./images/c-7.jpg" alt="">
+                    </div>
+                    <div class="latest-b-txt">
+                        <strong>DENIM JUMPSUIT</strong>
+                        <p>69.90 USD</p>
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <!-- movies -->
+    <div class="movies-heading">
+        <h2>Sales & Discounts</h2>
+    </div>
+
+    <!-- movie list -->
+    <div id="movie-list">
+        <!-- mv box1 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    30% off
+                </div>
+                <img src="./images/cl-1.jpg" alt="">
+            </div>
+            <a href="#">
+                Denim Shorts High Waist
+                <br> 
+                $ 24.99
+            </a>
+        </div>
+        <!-- mv box2 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    30% off
+                </div>
+                <img src="./images/cl-2.jpg" alt="">
+            </div>
+            <a href="#">
+                Sleeveless Poplin Shirt
+                <br>
+                $ 17.99
+            </a>
+        </div>
+        <!-- mv box3 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    10% off
+                </div>
+                <img src="./images/cl-3.jpg" alt="">
+            </div>
+            <a href="#">
+                Slim Fit Linen Suit Pants
+                <br>
+                $ 34.99
+            </a>
+        </div>
+        <!-- mv box4 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    20% off
+                </div>
+                <img src="./images/cl-4.jpg" alt="">
+            </div>
+            <a href="#">
+                Short-sleeve Shirt
+                <br>
+                $ 24.99
+            </a>
+        </div>
+        <!-- mv box5 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    50% off
+                </div>
+                <img src="./images/cl-5.jpg" alt="">
+            </div>
+            <a href="#">
+                2-piece Cotton Set
+                <br>
+                $ 14.99
+            </a>
+        </div>
+        <!-- mv box6 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    30% off
+                </div>
+                <img src="./images/cl-6.jpg" alt="">
+            </div>
+            <a href="#">
+                Cotton Shorts
+                <br>
+                $ 9.99
+            </a>
+        </div>
+        <!-- mv box7 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    20% off
+                </div>
+                <img src="./images/cl-7.jpg" alt="">
+            </div>
+            <a href="#">
+               Denim Overalls
+               <br>
+               $49.99
+            </a>
+        </div>
+        <!-- mv box8 -->
+        <div class="movie-box">
+            <div class="movie-img">
+                <div class="quality">
+                    20% off
+                </div>
+                <img src="./images/cl-8.jpg" alt="">
+            </div>
+            <a href="#">
+                Cotton Jersey Dress
+                <br>
+                $ 12.99
+            </a>
+        </div>
+    </div>
+
+    <!-- btns -->
+    <div class="btns">
+        <a href="#">Previous</a>
+        <a href="#">Next</a>
+    </div>
+
+    <!-- footer -->
+    <div class="bottom-foot">
+        <p>Going To Internet, Ltd Consumer Website</p>
+        <p>Copywight 2021 - Going To Internet</p>
+    </div>
+
+
+    <!-- jquery.min.js & for slider js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- slider js-->
+    <script src="./sliderModules/lightslider.js"></script>
+    <!-- private js -->
+    <script src="./main.js"></script>
+    <script src="./action.js"></script>
+</body>
+
+</html>
