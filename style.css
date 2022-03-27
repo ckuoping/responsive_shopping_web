@@ -116,7 +116,7 @@ nav .search i {
 .banner {
     width: 100%;
     height: 550px;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     background-image: url("./images/b-2.jpg");
     background-size: cover;
     background-attachment: fixed;
